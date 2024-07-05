@@ -1,13 +1,13 @@
-package com.javastart.registry;
+package com.javastart.billservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RegistryApplication {
+public class BillServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RegistryApplication.class, args);
+		SpringApplication.run(BillServiceApplication.class, args);
 	}
 
 }

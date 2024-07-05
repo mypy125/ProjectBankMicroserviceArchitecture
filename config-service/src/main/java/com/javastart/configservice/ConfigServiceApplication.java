@@ -1,13 +1,13 @@
-package com.javastart.registry;
+package com.javastart.configservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RegistryApplication {
+public class ConfigServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RegistryApplication.class, args);
+		SpringApplication.run(ConfigServiceApplication.class, args);
 	}
 
 }

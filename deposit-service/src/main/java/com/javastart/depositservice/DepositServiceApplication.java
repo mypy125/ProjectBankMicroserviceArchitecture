@@ -1,13 +1,13 @@
-package com.javastart.registry;
+package com.javastart.depositservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RegistryApplication {
+public class DepositServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RegistryApplication.class, args);
+		SpringApplication.run(DepositServiceApplication.class, args);
 	}
 
 }
