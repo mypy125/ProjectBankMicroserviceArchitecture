@@ -3,7 +3,7 @@ package com.javastart.billservice.controller;
 import com.javastart.billservice.dto.BillRequestDTO;
 import com.javastart.billservice.dto.BillResponseDTO;
 import com.javastart.billservice.mapper.BillResponseDTOMapper;
-import com.javastart.billservice.service.BillServiceImpl;
+import com.javastart.billservice.service.BillService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class BillController {
 
-    private final BillServiceImpl billService;
+    private final BillService billService;
 
 
     @GetMapping("/{billId}")

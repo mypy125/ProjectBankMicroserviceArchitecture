@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,7 @@ import java.time.OffsetDateTime;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Bill {
@@ -25,19 +27,4 @@ public class Bill {
     private OffsetDateTime creationDate;
     private Boolean overdraftEnabled;
 
-    public Bill(Long accountId, BigDecimal amount, Boolean isDefault,
-                OffsetDateTime creationDate, Boolean overdraftEnabled) {
-        this.accountId = accountId;
-        this.amount = amount;
-        this.isDefault = isDefault;
-        this.creationDate = creationDate;
-        this.overdraftEnabled = overdraftEnabled;
-    }
-
-    public Bill(Long accountId, BigDecimal amount, Boolean isDefault, Boolean overdraftEnabled) {
-        this.accountId = accountId;
-        this.amount = amount;
-        this.isDefault = isDefault;
-        this.overdraftEnabled = overdraftEnabled;
-    }
 }

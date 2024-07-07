@@ -17,12 +17,12 @@ public class BillRequestDTOMapper implements Mapper<Bill, BillRequestDTO> {
 
     @Override
     public Bill toEntity(BillRequestDTO dto) {
-        return new Bill(
-                dto.accountId(),
-                dto.amount(),
-                dto.isDefault(),
-                dto.creationDate(),
-                dto.overdraftEnabled()
-        );
+        return Bill.builder()
+                .accountId(dto.accountId())
+                .amount(dto.amount())
+                .isDefault(dto.isDefault())
+                .creationDate(dto.creationDate())
+                .overdraftEnabled(dto.overdraftEnabled())
+                .build();
     }
 }

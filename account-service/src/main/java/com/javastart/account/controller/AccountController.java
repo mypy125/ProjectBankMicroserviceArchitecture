@@ -2,8 +2,8 @@ package com.javastart.account.controller;
 
 import com.javastart.account.dto.AccountRequestDTO;
 import com.javastart.account.dto.AccountResponseDTO;
-import com.javastart.account.entity.Account;
 import com.javastart.account.mapper.AccountResponseDTOMapper;
+import com.javastart.account.service.AccountService;
 import com.javastart.account.service.AccountServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class AccountController {
 
-    private final AccountServiceImpl accountService;
+    private final AccountService accountService;
 
     @Autowired
     public AccountController(AccountServiceImpl accountService) {
